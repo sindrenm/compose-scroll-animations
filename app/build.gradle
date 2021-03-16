@@ -1,0 +1,75 @@
+plugins {
+    id("com.android.application")
+
+    id("kotlin-android")
+    id("kotlin-kapt")
+}
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.3"
+
+    defaultConfig {
+        applicationId "dev.sindrenm.spikes.compose.nestedscroll"
+        minSdkVersion 23
+        targetSdkVersion 30
+        versionCode 1
+        versionName "0.1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildFeatures {
+        compose = true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    packagingOptions {
+        resources.excludes.add("META-INF/AL2.0")
+        resources.excludes.add("META-INF/LGPL2.1")
+    }
+}
+
+dependencies {
+    // Activity
+    implementation("androidx.activity:activity-ktx:1.3.0-alpha04")
+    implementation("androidx.activity:activity-compose:1.3.0-alpha04")
+
+    // Appcompat
+    implementation("androidx.appcompat:appcompat:1.3.0-beta01")
+
+    // Compose
+    implementation("androidx.compose.animation:animation:1.0.0-beta02")
+    implementation("androidx.compose.foundation:foundation:1.0.0-beta02")
+    implementation("androidx.compose.material:material:1.0.0-beta02")
+    implementation("androidx.compose.material:material-icons-core:1.0.0-beta02")
+    implementation("androidx.compose.material:material-icons-extended:1.0.0-beta02")
+    implementation("androidx.compose.runtime:runtime:1.0.0-beta02")
+    implementation("androidx.compose.ui:ui-test:1.0.0-beta02")
+    implementation("androidx.compose.ui:ui-tooling:1.0.0-beta02")
+    implementation("androidx.compose.ui:ui:1.0.0-beta02")
+
+    // Fragment
+    implementation("androidx.fragment:fragment-ktx:1.3.1")
+
+    // Kotlin
+    implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.4.30")
+
+    // Material Design Components
+    implementation("com.google.android.material:material:1.4.0-alpha01")
+}
