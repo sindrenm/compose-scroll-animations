@@ -47,29 +47,29 @@ android {
 
 dependencies {
     // Activity
-    implementation("androidx.activity:activity-ktx:1.3.0-alpha04")
-    implementation("androidx.activity:activity-compose:1.3.0-alpha04")
+    implementation("androidx.activity:activity-ktx:1.3.0-alpha06")
+    implementation("androidx.activity:activity-compose:1.3.0-alpha06")
 
     // Appcompat
-    implementation("androidx.appcompat:appcompat:1.3.0-beta01")
+    implementation("androidx.appcompat:appcompat:1.3.0-rc01")
 
     // Compose
-    implementation("androidx.compose.animation:animation:1.0.0-beta02")
-    implementation("androidx.compose.foundation:foundation:1.0.0-beta02")
-    implementation("androidx.compose.material:material:1.0.0-beta02")
-    implementation("androidx.compose.material:material-icons-core:1.0.0-beta02")
-    implementation("androidx.compose.material:material-icons-extended:1.0.0-beta02")
-    implementation("androidx.compose.runtime:runtime:1.0.0-beta02")
-    implementation("androidx.compose.ui:ui-test:1.0.0-beta02")
-    implementation("androidx.compose.ui:ui-tooling:1.0.0-beta02")
-    implementation("androidx.compose.ui:ui:1.0.0-beta02")
+    implementation("androidx.compose.animation:animation:1.0.0-beta04")
+    implementation("androidx.compose.foundation:foundation:1.0.0-beta04")
+    implementation("androidx.compose.material:material:1.0.0-beta04")
+    implementation("androidx.compose.material:material-icons-core:1.0.0-beta04")
+    implementation("androidx.compose.material:material-icons-extended:1.0.0-beta04")
+    implementation("androidx.compose.runtime:runtime:1.0.0-beta04")
+    implementation("androidx.compose.ui:ui-test:1.0.0-beta04")
+    implementation("androidx.compose.ui:ui-tooling:1.0.0-beta04")
+    implementation("androidx.compose.ui:ui:1.0.0-beta04")
 
     // Fragment
-    implementation("androidx.fragment:fragment-ktx:1.3.1")
+    implementation("androidx.fragment:fragment-ktx:1.3.2")
 
     // Kotlin
-    implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.4.30")
+    implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.4.32")
 
     // Material Design Components
-    implementation("com.google.android.material:material:1.4.0-alpha01")
+    implementation("com.google.android.material:material:1.4.0-alpha02")
 }
